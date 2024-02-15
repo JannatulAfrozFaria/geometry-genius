@@ -58,7 +58,7 @@ function calculateRectangleArea(){
 // }
 
 
-//Create a Reusable Function for similar task
+// Create a Reusable Function for similar task
 function getParallelogramArea(){
     const pBase = getInputValue('parallelogram-base');
     // console.log('base value', pBase);
@@ -77,4 +77,30 @@ function getInputValue(inputFieldId){
 function setInnerTextById (elementId , area){
     const element = document.getElementById(elementId);
     element.innerText = area;
+}
+
+//Create a Function for pentagon
+function calculatePentagonArea(){
+    const perimeter = getInputValue('pentagon-perimeter');
+    const apothem = getInputValue('pentagon-apothem');
+    const area = 0.5 * perimeter* apothem;
+    setInnerTextById('pentagon-area', area);
+}
+// function getInputValue(inputField){
+//     const inputField2 = document.getElementById(inputField);
+//     const inputValueText2 = inputField2.value;
+//     const value = parseFloat(inputValueText2);
+//     return value;
+// }
+// function setInnerTextById(elementId , area){
+//     const element2 = document.getElementById(elementId);
+//     element2.innerText = area;
+// }
+
+// /Create a Reusable Function for Ellipse
+function calculateEllipseArea(){
+    const majorRadius = getInputValue('ellipse-major-radius');
+    const minorRadius = getInputValue('ellipse-minor-radius');
+    const area = 3.1416 * majorRadius* minorRadius;
+    setInnerTextById('ellipse-area', area);
 }

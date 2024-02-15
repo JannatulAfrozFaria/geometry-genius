@@ -85,7 +85,7 @@
                 <div class="card w-96 bg-base-100 shadow-xl">
                 <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                 <div class="card-body items-center">
-                <h2 class="card-title">Triangle</h2>
+                <h2 class="card-title">Rhombus</h2>
                 <p class="text-3xl">Area (A) = 0.5 X d1 X d2</p>
                 <div class="flex gap-1 items-center">
                   <input id="triangle-base" class="w-24 text-2xl p-2 rounded-md bg-[#F1F1F1]" type="text" placeholder="b">
@@ -105,21 +105,21 @@
                 <div class="card w-96 bg-base-100 shadow-xl">
                 <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                 <div class="card-body items-center">
-                <h2 class="card-title">Rectangle</h2>
+                <h2 class="card-title">Pentagon</h2>
                 <p class="text-3xl">Area (A) = 0.5 X p X b</p>
                 <div class="flex gap-1 items-center">
-                <!-- rectangle width -->
-                <input id="rectangle-width" class="w-24 text-2xl p-2 rounded-md bg-[#F1F1F1]" type="text" placeholder="w">
+                <!-- pentagon perimeter-->
+                <input id="pentagon-perimeter" class="w-24 text-2xl p-2 rounded-md bg-[#F1F1F1]" type="text" placeholder="p">
                 <span >cm</span>
-                <!-- rectangle length -->
-                <input id="rectangle-length" class="w-24 text-2xl p-2 rounded-md bg-[#F1F1F1]" type="text" placeholder="l">
+                <!-- pentagon apothem -->
+                <input id="pentagon-apothem" class="w-24 text-2xl p-2 rounded-md bg-[#F1F1F1]" type="text" placeholder="b">
                 <span>cm</span>
               </div>
               <div>
-                <p class="text-2xl">Area :<span id="rectangle-area">0</span><span>cm<sup>2</sup></span></p>
+                <p class="text-2xl">Area :<span id="pentagon-area">0</span><span>cm<sup>2</sup></span></p>
               </div>
               <div class="w-full">
-                <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
                 </div>
@@ -127,21 +127,21 @@
                 <div class="card w-96 bg-base-100 shadow-xl">
                 <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                 <div class="card-body items-center">
-                <h2 class="card-title">Parallelogram</h2>
-                <p class="text-3xl">Area (A) = 3.1416 X a X b</p>
+                <h2 class="card-title">Ellipse</h2>
+                <p class="text-3xl">Area (A) = πab</p>
                 <div class="flex gap-1 items-center">
                 <!-- parallelogram width -->
-                <input id="parallelogram-base" class="w-24 text-2xl p-2 rounded-md bg-[#F1F1F1]" type="text" placeholder="b">
+                <input id="ellipse-major-radius" class="w-24 text-2xl p-2 rounded-md bg-[#F1F1F1]" type="text" placeholder="b">
                 <span >cm</span>
                 <!-- parallelogram length -->
-                <input id="parallelogram-height" class="w-24 text-2xl p-2 rounded-md bg-[#F1F1F1]" type="text" placeholder="h">
+                <input id="ellipse-minor-radius" class="w-24 text-2xl p-2 rounded-md bg-[#F1F1F1]" type="text" placeholder="h">
                 <span>cm</span>
               </div>
               <div>
-                <p class="text-2xl">Area :<span id="parallelogram-area">0</span><span>cm<sup>2</sup></span></p>
+                <p class="text-2xl">Area :<span id="ellipse-area">0</span><span>cm<sup>2</sup></span></p>
               </div>
               <div class="w-full">
-                <button onclick="getParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
               </div>
                 </div>
